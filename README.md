@@ -1,4 +1,5 @@
 # Triplicate Group Website
+
 Website for Triplicate Group
 
 [Triplicate Group Website](https://triplicate-group.com)
@@ -16,33 +17,41 @@ Author: Evan Harmon
 ## Setup & Installation
 
 ### Requirements
+
 - Homebrew
 - Python
 - [Taskfile](https://taskfile.dev/)
 
 ### Bootstrap
+
 Install required software to run other project installers and task runners
 `task bootstrap`
 
 ### Install
+
 Install required dependencies
 `task install`
 
 ## Usage
+
 TODO: project usage
 
 ### Task Runner
+
 [Taskfile.yaml](./Taskfile.yml)
 
 ### Testing
 
 #### Validate
+
 `task validate`
 
 #### Security
+
 `task security`
 
 #### Linting, Formatting, Conventions, Style Guidelines, etc
+
 - .pre-commit-config.yaml
 - .shellcheckrc
 - .ansible-lint-ignore
@@ -50,4 +59,5 @@ TODO: project usage
 ### Building, Deploying, & CI/CD
 
 ## Todo File
+
 [todo.md](./todo.md)
