@@ -1,0 +1,25 @@
+# Changes here will be overwritten by Copier
+_commit: v2.1.17
+_src_path: triplicate-stack
+ansible: false
+bunch_add: true
+ci_cd: github_actions
+code_templates: false
+data_folder: false
+design_files: true
+devcontainer: false
+git_init: false
+github_collaboration_templates: true
+github_release_init: false
+github_remote_create: false
+infra: []
+license: private
+observability: []
+obsidian_project_add: true
+project_description: Website for Triplicate Group
+project_name: Triplicate Group Website
+project_slug: triplicate-group
+project_type: code
+project_url: https://triplicate-group.com
+run_task_bootstrap: false
+run_task_install: false
