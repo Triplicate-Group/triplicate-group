@@ -1,6 +1,8 @@
 ---
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'About us',
@@ -11,14 +13,50 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
     image={{
       src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       alt: 'Caos Image',
     }}
   >
-    <Fragment slot="title"> TODO </Fragment>
+    <Fragment slot="title"> About Us </Fragment>
 
-    <Fragment slot="subtitle"> TODO </Fragment>
+    <Fragment slot="subtitle">
+      We're passionate about helping entrepreneurs, startups, and small business owners utilize technology in a way that
+      actually solves problems instead of just adding to the already complex business and technology landscape.
+    </Fragment>
   </Hero>
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Our values"
+    subtitle="We pride ourselves on being honest, transparent, and unbiased in everything we do."
+    items={[
+      {
+        title: 'Customer-centric',
+        description: 'We are here to serve you and your business, not sell you a specific product or solution.',
+      },
+      {
+        title: 'Practical',
+        description: 'We love helping you solve your specific problems, not chase the lastest buzzwords, or hot tools.',
+      },
+      {
+        title: 'Ethical',
+        description:
+          'We savor the opportunity to run our business with integrity and honesty not often possible in the corporate world and strive to find other people and companeies to build relationships with.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    id="lets-talk"
+    actions={[
+      { text: 'Contact Us', href: '/contact', variant: 'primary' },
+      { text: 'Meet With Us', href: 'https://fantastical.app/evanharmon' },
+    ]}
+  >
+    <Fragment slot="title"> Let's Talk! </Fragment>
+  </CallToAction>
 </Layout>
