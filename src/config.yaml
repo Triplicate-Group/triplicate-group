@@ -11,7 +11,7 @@ metadata:
   title:
     default: Triplicate Group
     template: template
-  description: "We make technology work better for small and medium-sized businesses"
+  description: 'We make technology work better for small and medium-sized businesses'
   robots:
     index: true
     follow: true
