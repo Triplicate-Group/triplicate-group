@@ -11,6 +11,10 @@ export const headerData = {
       href: '/contact',
     },
     {
+      text: 'Services',
+      href: '/services',
+    },
+    {
       text: 'Meet',
       href: 'https://fantastical.app/evanharmon',
     },
@@ -22,6 +26,7 @@ export const footerData = {
   secondaryLinks: [
     { text: 'About', href: '/about' },
     { text: 'Contact', href: '/contact' },
+    { text: 'Services', href: '/services' },
     { text: 'Meet', href: '/meet' },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
