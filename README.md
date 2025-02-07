@@ -2,7 +2,7 @@
 
 Website for Triplicate Group
 
-[Triplicate Group Website](https://triplicate-group.com)
+[Triplicate Group Website](https://triplicategroup.com)
 
 Author: Evan Harmon
 
