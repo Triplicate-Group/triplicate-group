@@ -6,9 +6,9 @@ Website for Triplicate Group
 
 Author: Evan Harmon
 
-[![Validate](https://github.com/evanharmon1/triplicate-group/actions/workflows/validate.yml/badge.svg)](https://github.com/evanharmon1/triplicate-group/actions/workflows/validate.yml)
-[![Build](https://github.com/evanharmon1/triplicate-group/actions/workflows/build.yml/badge.svg)](https://github.com/evanharmon1/triplicate-group/actions/workflows/build.yml)
-[![Security](https://github.com/evanharmon1/triplicate-group/actions/workflows/security.yml/badge.svg)](https://github.com/evanharmon1/triplicate-group/actions/workflows/security.yml)
+[![Validate](https://github.com/triplicate-group/actions/workflows/validate.yml/badge.svg)](https://github.com/evanharmon1/triplicate-group/actions/workflows/validate.yml)
+[![Build](https://github.com/triplicate-group/actions/workflows/build.yml/badge.svg)](https://github.com/evanharmon1/triplicate-group/actions/workflows/build.yml)
+[![Security](https://github.com/triplicate-group/actions/workflows/security.yml/badge.svg)](https://github.com/evanharmon1/triplicate-group/actions/workflows/security.yml)
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-orange.json)](https://github.com/copier-org/copier)
 [![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/astrowind#contributing)
