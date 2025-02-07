@@ -6,6 +6,7 @@ Website for Triplicate Group
 
 Author: Evan Harmon
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/edff9cf5-c231-4a97-a6f9-2f484dcbbf6e/deploy-status)](https://app.netlify.com/sites/kctechsupport/deploys)
 [![Validate](https://github.com/triplicate-group/actions/workflows/validate.yml/badge.svg)](https://github.com/evanharmon1/triplicate-group/actions/workflows/validate.yml)
 [![Build](https://github.com/triplicate-group/actions/workflows/build.yml/badge.svg)](https://github.com/evanharmon1/triplicate-group/actions/workflows/build.yml)
 [![Security](https://github.com/triplicate-group/actions/workflows/security.yml/badge.svg)](https://github.com/evanharmon1/triplicate-group/actions/workflows/security.yml)
