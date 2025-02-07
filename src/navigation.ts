@@ -18,6 +18,10 @@ export const headerData = {
       text: 'Meet',
       href: 'https://fantastical.app/evanharmon',
     },
+    {
+      text: 'Blog',
+      href: '/blog',
+    },
   ],
 };
 
@@ -28,6 +32,7 @@ export const footerData = {
     { text: 'Contact', href: '/contact' },
     { text: 'Services', href: '/services' },
     { text: 'Meet', href: '/meet' },
+    { text: 'Blog', href: '/blog' },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
