@@ -15,6 +15,10 @@ export const headerData = {
       href: '/services',
     },
     {
+      text: 'Pricing',
+      href: '/pricing',
+    },
+    {
       text: 'Meet',
       href: 'https://fantastical.app/evanharmon',
     },
