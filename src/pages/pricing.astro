@@ -3,7 +3,6 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Prices from '~/components/widgets/Pricing.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
@@ -16,103 +15,382 @@ const metadata = {
   <!-- HeroText Widget ******************* -->
 
   <HeroText
-    tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    title="Our Pricing"
+    subtitle="Services, plans, and solutions for any budget"
   />
 
-  <!-- Pricing Widget ******************* -->
+  <!-- AI Chat Bot Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="AI Chat Bot"
+    subtitle="For your website"
     prices={[
       {
         title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
+        price: 39,
         period: 'per month',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'Initial setup & basic configuration',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
-          },
-          {
-            description: 'Cras scelerisque accumsan lib',
-          },
-          {
-            description: 'In hac habitasse',
+            description: 'Optional custom configuration & AI development at $75/hr',
           },
         ],
         callToAction: {
           target: '_blank',
           text: 'Get started',
-          href: '#',
+          href: 'contact',
         },
       },
       {
         title: 'standard',
-        subtitle: 'Optimal choice for small teams',
+        price: 49,
+        period: 'Per Month',
+        items: [
+          {
+            description: 'Everything in “Basic” plus:',
+          },
+          {
+            description: 'Weekly email reports',
+          },
+          {
+            description: 'Up to 1 optional meeting per month for simple updates of company information, data and RAG resources at no charge',
+          },
+          {
+            description: 'Up to 5 hours of custom configuration & AI development at $55/hr ($75/hr after)',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: 'contact',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'recommended',
+      },
+      {
+        title: 'professional',
         price: 69,
         period: 'Per Month',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: 'Everything in “Standard” plus:',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: 'Up to 2 optional meetings per month for simple updates of company information, data and RAG resources at no charge',
           },
           {
-            description: 'Volutpat hac curabitur',
-          },
-          {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
+            description: 'Up to 5 hours of custom configuration & AI development at $45/hr ($75/hr after)',
           },
         ],
         callToAction: {
           target: '_blank',
           text: 'Get started',
-          href: '#',
-        },
-        hasRibbon: true,
-        ribbonTitle: 'popular',
-      },
-      {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
-        items: [
-          {
-            description: 'Curabitur suscipit risus',
-          },
-          {
-            description: 'Aliquam habitasse malesuada',
-          },
-          {
-            description: 'Suspendisse sit amet blandit',
-          },
-          {
-            description: 'Suspendisse auctor blandit dui',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          href: 'contact',
         },
       },
     ]}
   />
 
+<!-- Website Hosting Pricing Widget ******************* -->
+
+<Prices
+title="Website Hosting"
+subtitle="We can host, maintain, update, & monitor your site"
+prices={[
+  {
+    title: 'basic',
+    price: 29,
+    period: 'per month',
+    items: [
+      {
+        description: 'Domain & DNS configuration & monitoring',
+      },
+      {
+        description: 'Secure SSL/TLS HTTPS compliant',
+      },
+      {
+        description: 'Initial build and deployment',
+      },
+      {
+        description: 'SLA 99.99 % uptime',
+      },
+      {
+        description: 'Uptime monitoring & dashboard',
+      },
+      {
+        description: 'No included meetings or edits',
+      },
+      {
+        description: 'Updates, edits, and custom development at $75/hr',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: 'contact',
+    },
+  },
+  {
+    title: 'standard',
+    price: 59,
+    period: 'Per Month',
+    items: [
+      {
+        description: 'Everything in “Basic” plus:',
+      },
+      {
+        description: 'SLA 99.9999% uptime',
+      },
+      {
+        description: 'Security monitoring (SAST, SSL)',
+      },
+      {
+        description: 'Weekly email reports',
+      },
+      {
+        description: 'Up to 1 optional meeting per month for copy edits or simple updates at no charge',
+      },
+      {
+        description: 'Up to 5 hours custom development at $55/hr ($75/hr after)',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: 'contact',
+    },
+    hasRibbon: true,
+    ribbonTitle: 'recommended',
+  },
+  {
+    title: 'professional',
+    price: 79,
+    period: 'Per Month',
+    items: [
+      {
+        description: 'Everything in “Standard” plus:',
+      },
+      {
+        description: 'Up to 2 optional meetings per month for copy edits or simple updates at no charge',
+      },
+      {
+        description: 'Up to 5 hours custom development at $45/hr ($75/hr after)',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: 'contact',
+    },
+  },
+]}
+/>
+
+<!-- Website Build Pricing Widget ******************* -->
+
+<Prices
+title="Initial Website Build"
+subtitle="We can build a great mobile-friendly website for you with options that include SEO"
+prices={[
+  {
+    title: 'basic',
+    price: 899,
+    period: 'One Time',
+    items: [
+      {
+        description: 'DNS and domain configuration',
+      },
+      {
+        description: 'Mobile-friendly design that works on all devices and improves SEO',
+      },
+      {
+        description: 'Fully customizable site that doesn’t lock you in to a platform with limited building blocks',
+      },
+      {
+        description: 'You own the source code and the domain',
+      },
+      {
+        description: 'Up to 2 included meetings to go over initial versions, adjust design, and get progress updates',
+      },
+      {
+        description: 'Up to 6 total hours of software development included (which typically can create sites with 5-10 pages)',
+      },
+      {
+        description: 'Additional software development at $75/hr',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: 'contact',
+    },
+  },
+  {
+    title: 'standard',
+    price: 1499,
+    period: 'One Time',
+    items: [
+      {
+        description: 'Everything in “Basic” plus:',
+      },
+      {
+        description: 'Guaranteed site speed, security, and performance ranking to help SEO',
+      },
+      {
+        description: 'Up to 3 included meetings to go over initial versions, adjust design, and get progress updates',
+      },
+      {
+        description: 'Up to 10 total hours of software development included (which typically can create sites with 10-15 pages)',
+      },
+      {
+        description: 'Up to 5 hours additional software development at $55/hr ($75 after)',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: 'contact',
+    },
+  },
+  {
+    title: 'professional',
+    price: 1999,
+    period: 'One Time',
+    items: [
+      {
+        description: 'Everything in “Standard” plus:',
+      },
+      {
+        description: 'SEO tag optimization',
+      },
+      {
+        description: 'SEO sitemap',
+      },
+      {
+        description: 'Social media friendly shareable links to make your site show up as rich thumbnails when shared on social media',
+      },
+      {
+        description: 'Up to 4 included meetings to go over initial versions, adjust design, and get progress updates',
+      },
+      {
+        description: 'Up to 14 total hours of software development included (which typically can create sites with 15-20 pages)',
+      },
+      {
+        description: 'Up to 5 hours additional development at $45/hr ($75 after)',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: 'contact',
+    },
+    hasRibbon: true,
+    ribbonTitle: 'recommended',
+  },
+]}
+/>
+
+<!-- SEO & Web Analytics Reports Pricing Widget ******************* -->
+
+<Prices
+title="SEO & Web Analytics Reports"
+subtitle="Get detailed reports on your site visitors and SEO performance"
+prices={[
+  {
+    title: 'basic',
+    price: 19,
+    period: 'Per Month',
+    items: [
+      {
+        description: 'Weekly email reports of SEO and web analytics data',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: 'contact',
+    },
+  },
+  {
+    title: 'standard',
+    price: 29,
+    period: 'Per Month',
+    items: [
+      {
+        description: 'Everything in “Basic” plus:',
+      },
+      {
+        description: 'Custom real-time SEO dashboard tuned to your business',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: 'contact',
+    },
+  },
+  {
+    title: 'professional',
+    price: 199,
+    period: 'Per Month',
+    items: [
+      {
+        description: 'Everything in “Standard” plus:',
+      },
+      {
+        description: 'Monthly SEO audit',
+      },
+      {
+        description: 'Up to 1 optional meeting per month to review and update SEO strategy, keywords, and campaigns',
+      },
+      {
+        description: 'Up to 1 hour of SEO development or website edits at no charge',
+      },
+    ],
+    callToAction: {
+      target: '_blank',
+      text: 'Get started',
+      href: 'contact',
+    },
+    hasRibbon: true,
+    ribbonTitle: 'recommended',
+  },
+]}
+/>
+
+<!-- Initial SEO Buildouts, Customizations, or Audits Pricing Widget ******************* -->
+
+<Prices
+title="Initial SEO Buildouts, Customizations, or Audits"
+subtitle="Don't have SEO yet? Or need to refresh your existing SEO? Contact Us For Pricing."
+/>
+
+<!-- SEO Keyword Campaigns, Marketing Campaigns, & Lead Generation ******************* -->
+
+<Prices
+title="SEO Keyword Campaigns, Marketing Campaigns, & Lead Generation"
+subtitle="We can help you design a custom SEO keyword campaign to increase your leads right away. Contact Us For Pricing."
+/>
+
+<!-- Social Media Management ******************* -->
+
+<Prices
+title="Social Media Management"
+subtitle="We can either help you manage your social media strategy or do it all for you! Contact Us For Pricing."
+/>
+
+<!-- Online Reputation Management ******************* -->
+
+<Prices
+title="Online Reputation Management"
+subtitle="Make sure you have business profile pages in all the most important places and that you're getting great reviews."
+/>
+
   <!-- Features3 Widget ************** -->
 
-  <Features3
+  <!-- <Features3
     title="Price-related features"
     subtitle="Discover the advantages of choosing our plans"
     columns={2}
@@ -149,53 +427,11 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
-  />
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
-    isReversed={true}
-    items={[
-      {
-        title: 'Explore plans',
-        icon: 'tabler:number-1',
-      },
-      {
-        title: 'Select a plan',
-        icon: 'tabler:number-2',
-      },
-      {
-        title: 'Sign Up / Log In',
-        icon: 'tabler:number-3',
-      },
-      {
-        title: 'Review order',
-        icon: 'tabler:number-4',
-      },
-      {
-        title: 'Enter payment details',
-        icon: 'tabler:number-5',
-      },
-      {
-        title: 'Confirmation',
-        icon: 'tabler:number-6',
-      },
-      {
-        title: 'Download and start using the template(s)',
-        icon: 'tabler:number-7',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
-  <FAQs
+  <!-- <FAQs
     title="Pricing FAQs"
     subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
     columns={1}
@@ -226,19 +462,17 @@ const metadata = {
           'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
       },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    id="lets-talk"
     actions={[
-      {
-        variant: 'primary',
-        text: 'Get started now',
-        href: '/',
-      },
+      { text: 'Contact Us', href: '/contact', variant: 'primary' },
+      { text: 'Meet With Us', href: 'https://fantastical.app/evanharmon' },
     ]}
-  />
+  >
+    <Fragment slot="title"> Let's Talk! </Fragment>
+  </CallToAction>
 </Layout>
